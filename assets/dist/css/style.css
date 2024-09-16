@@ -1,0 +1,669 @@
+:root {
+  --primary-color: #1a9dfc;
+  --secondary-color: #fc8413;
+  --selection-color: #97b3ff;
+
+  --developer-color: #075507;
+
+  --text-gray-color: #606060;
+  --white-color: #ffffff;
+  --ofwhite-color: #f2f2f2;
+  --black-color: #000000;
+  --light-color: #fcfcfc;
+  --light-color2: #aaaaaa;
+  --dark-color: #242424;
+  --sky-color: #647589;
+  --border-color: #e7e7e7;
+  --border-color2: #e4e4e4;
+  --border-color3: #dddddd;
+  --border-dark: #383434;
+  --bg-gray-color: #fcfcfc;
+  --gray-color: #fafbfe;
+  --gray-color2: #f5f5f5;
+  --font-calibri: "calibri", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #fff;
+  overflow: hidden;
+}
+
+::selection {
+  background: rgba(6, 246, 246, 0.35);
+}
+
+.content-wrapper {
+  background: #fff !important;
+  margin-left: 255px !important;
+}
+
+@media (max-width: 991px) {
+  .content-wrapper {
+    margin-left: 0 !important;
+  }
+}
+
+@media print {
+  @page {
+    size: landscape !important;
+  }
+}
+
+.alert {
+  padding: 0.5rem;
+}
+
+a.card-link:hover,
+a.card-link:focus,
+a.card-link:active {
+  text-decoration: none;
+}
+
+.input::placeholder {
+  color: #ec0d0d !important;
+}
+
+/*Sidebar CSS Start*/
+.main-sidebar {
+  background: #f3f6f9 !important;
+  /* width: 258px !important; */
+}
+
+.brand-text {
+  color: #075507;
+  font-size: 16px;
+}
+.nav-item.active {
+  text-align: left;
+}
+
+.sidebar-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-nav-link img {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
+
+.sidebar-nav-link p {
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+/*Sidebar CSS End*/
+
+.main-header,
+.main-footer {
+  background-color: #f3f6f9 !important;
+}
+
+/*Main Content Dashboard Start*/
+.dashboard-area {
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.wide-dashboard-area {
+  max-width: 95%;
+}
+
+.flex-start-row {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-box {
+  color: #000000 !important; /* Text color */
+}
+
+.custom-box h3 {
+  color: #1a9dfc !important; /* Heading color */
+}
+
+.custom-box .icon {
+  color: rgba(26, 157, 252, 0.5) !important;
+}
+
+.custom-link {
+  background-color: rgba(26, 157, 252, 0.8) !important;
+}
+
+.custom-link:hover {
+  color: #1a9dfc !important;
+}
+
+/* New styles for available files */
+.available-box {
+  border-color: #4caf50 !important; /* Green border */
+}
+
+.available-box h3 {
+  color: #4caf50 !important; /* Green heading color */
+}
+
+.available-box .icon {
+  color: rgba(76, 175, 80, 0.5) !important; /* Green icon color */
+}
+
+.available-link {
+  background-color: rgba(76, 175, 80, 0.8) !important; /* Green background */
+}
+
+.available-link:hover {
+  color: #4caf50 !important;
+}
+
+/* New styles for sold files */
+.sold-box {
+  border-color: #f44336 !important; /* Red border */
+}
+
+.sold-box h3 {
+  color: #f44336 !important; /* Red heading color */
+}
+
+.sold-box .icon {
+  color: rgba(244, 67, 54, 0.5) !important; /* Red icon color */
+}
+
+.sold-link {
+  background-color: rgba(244, 67, 54, 0.8) !important; /* Red background */
+}
+
+.sold-link:hover {
+  color: #f44336 !important;
+}
+
+.text-center {
+  margin-bottom: 15px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+/*Main Content Dashboard End*/
+
+/*Card CSS Start*/
+.card-container {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.task-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  padding: 0 10px !important;
+}
+
+.card img {
+  max-width: 35px; /* Adjust the max-width as needed */
+  max-height: 35px; /* Adjust the max-height as needed */
+  margin-bottom: 10px;
+}
+
+.card-title {
+  margin-top: 10px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #1a9dfc;
+}
+
+.card-body p {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.plot-card-icon {
+  color: #0279ce;
+  margin-right: 5px;
+}
+
+.plot-edit-icon {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.card {
+  width: 100% !important;
+  margin-bottom: 10px !important;
+  border: none !important;
+  border-radius: 7px !important;
+  background-color: #ffffff !important;
+  box-shadow: 5px 10px 20px rgba(75, 75, 75, 0.1) !important;
+}
+
+/* Fixed height for desktop and tablet */
+@media (min-width: 730px) {
+  .card {
+    height: 180px;
+  }
+  .dashboard-card {
+    height: 125px !important;
+  }
+  .sowing-card,
+  .expense-card {
+    height: 160px;
+  }
+  .fertilize-card {
+    height: 195px;
+  }
+  .irrigate-card,
+  .harvest-card {
+    height: 150px;
+  }
+  .labour-card {
+    height: 120px;
+  }
+}
+
+/* Adaptive height for mobile */
+@media (max-width: 729px) {
+  .card {
+    height: auto;
+  }
+}
+
+/* Additional styles for smaller screens (tablets) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .card-container {
+    max-width: 350px; /* Adjust the margin as needed */
+  }
+}
+
+/* Additional styles for even smaller screens (phones) */
+@media (max-width: 576px) {
+  .card-container {
+    max-width: 350px; /* Adjust the margin as needed */
+  }
+}
+
+.info-card-content {
+  padding: 20px 10px 20px 30px;
+  width: 80%;
+}
+
+/* CSS for making modal body scrollable */
+.modal-body-scrollable {
+  max-height: 70vh !important; /* Adjust the max-height as needed */
+  overflow-y: auto !important;
+  scrollbar-width: thin; /* Firefox */
+}
+
+.content-wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  /*scrollbar-color: transparent transparent; !* Firefox *!*/
+}
+
+.content-wrapper {
+  max-height: 85vh;
+  max-width: 2000px;
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .content-wrapper {
+    max-width: 95%; /* Adjust as needed for mobile */
+  }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 991px) {
+  .content-wrapper {
+    max-width: 95%; /* Adjust as needed for tablets */
+  }
+}
+
+/* For laptops and larger screens */
+@media (min-width: 1025px) {
+  .content-wrapper {
+    max-height: 75vh;
+    max-width: 2000px; /* Adjust as needed for laptops and larger screens */
+  }
+}
+
+.edit-icon {
+  width: 20%;
+  justify-self: end;
+}
+
+.edit-icon-img {
+  width: 18px;
+  height: 18px;
+}
+
+.info-card-content p {
+  color: #a6a6a6;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #1a9dfc;
+  font-size: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+/*Card CSS End*/
+
+/*Admin CSS Start*/
+.plot-ownership-tag {
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: #ffffff !important;
+  margin-top: 10px;
+}
+/*Admin CSS End*/
+
+/*Land Tasks CSS Start*/
+.plan-task-tag {
+  display: inline-block;
+  align-items: center;
+  border-radius: 6px;
+  padding: 3px 10px 0;
+  margin-bottom: 15px !important;
+}
+/*Admin CSS End*/
+
+/*Start Modal CSS*/
+.modal-content {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px rgba(169, 169, 169, 0.5);
+}
+
+.modal-header {
+  background-color: #ffffff;
+  border-bottom: none;
+}
+
+.modal-title {
+  color: #1a9dfc;
+}
+
+.modal-body {
+  padding: 10px;
+}
+
+/* End Modal CSS*/
+
+/* New Record Button CSS Start */
+.w-200 {
+  width: 200px !important;
+}
+
+.new-record-button {
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(169, 169, 169, 0.6);
+  background-color: #0279ce;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.new-record-button-icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+.new-record-button-text {
+  font-size: 15px;
+  color: white;
+}
+/* New Record Button CSS End */
+
+/*Login CSS Start*/
+.login-form {
+  width: 400px;
+  max-width: 440px;
+  padding: 0;
+  /*margin: 250px 10px;*/
+  background: transparent;
+  border-radius: 5px;
+  /* box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1); */
+}
+
+/* Additional styles for even smaller screens (phones) */
+@media (max-width: 576px) {
+  .login-form {
+    max-width: 350px; /* Adjust the margin as needed */
+  }
+}
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  /* background-color: white !important; */
+}
+
+.wrapper .title {
+  height: 90px;
+  background: transparent;
+  border-radius: 5px 5px 0 0;
+  color: #009cff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form {
+  padding: 5px 25px 25px 25px;
+}
+.wrapper form .row {
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus {
+  border-color: #1a9dfc;
+  box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+/* CSS for placeholder */
+#myModal ::placeholder {
+  color: lightgrey;
+}
+.wrapper form .row i {
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #1a9dfc;
+  font-size: 18px;
+  background: transparent;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .forgetpass {
+  margin: -8px 0 20px 0;
+}
+.wrapper form .forgetpass a {
+  color: #80efde;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .forgetpass a:hover {
+  text-decoration: underline;
+}
+.wrapper form .button input {
+  width: 150px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #0279ce;
+  border: 1px solid #0279ce;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+form .button input:hover {
+  background: #0279ce;
+}
+.wrapper form .signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a {
+  color: #16a085;
+  text-decoration: none;
+}
+form .signup-link a:hover {
+  text-decoration: underline;
+}
+/*Login CSS End*/
+
+/*Table CSS Start*/
+/* Fixed thead */
+.table thead.thead-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff; /* Set background color as needed */
+}
+.txt-10 th {
+  font-size: 10px !important;
+}
+.txt-10 td {
+  font-size: 10px !important;
+}
+
+.table th {
+  font-weight: bold !important;
+  font-size: 12px;
+}
+
+.table td {
+  font-size: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .table th,
+  .table td {
+    font-size: 10px !important;
+  }
+  .table th {
+    text-align: center !important;
+  }
+}
+
+.table-action-icon {
+  font-size: 1rem;
+}
+
+.bright-bg-blue {
+  background-color: #c9d9ee !important; /* Bright blue */
+}
+
+.bright-bg-green {
+  background-color: #ddffd7 !important; /* Bright green */
+}
+
+.bright-bg-red {
+  background-color: #ffd7d7 !important; /* Bright red */
+}
+
+.light-bg-blue {
+  background-color: #f3f8ff !important; /* Light blue */
+}
+
+.light-bg-green {
+  background-color: #eefaeb !important; /* Light green */
+}
+
+.light-bg-red {
+  background-color: #ffebeb !important; /* Light red */
+}
+/*Table CSS End*/
+
+/* Add CSS to increase the height of the profile photo */
+.profile-photo {
+  max-height: 200px; /* Adjust the height as needed */
+}
+
+.cnic-photo {
+  max-height: 95px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add some spacing between the photos */
+  margin-right: 10px; /* Add some spacing between the photos */
+}
+
+/*Payment Page Alert CSS Start*/
+.custom-alert {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Adjust as needed */
+}
+
+.custom-icon {
+  color: red;
+  font-size: 28px; /* Adjust as needed */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.custom-message {
+  font-size: 12px; /* Adjust as needed */
+  color: black;
+}
+/*Payment Page Alert CSS End*/
+
+/* Change color of active parent items */
+.nav-sidebar .nav-item.menu-open > .nav-link.active {
+  background-color: #b5bfc9 !important; /* Change this to your desired background color */
+  color: #000000; /* Change this to your desired text color */
+}
+
+/* Optionally, change the color of the dropdown arrow */
+.nav-sidebar .nav-item.menu-open > .nav-link.active .fas.fa-angle-left {
+  color: #000000; /* Change this to your desired arrow color */
+}
